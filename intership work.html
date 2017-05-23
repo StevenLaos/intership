@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+	Sisesta tekst: <input id="sentence"/>
+	<script>
+	
+	document.getElementById("sentence").addEventListener("change", myAwsomeFunctionWithName);
+	
+	function myAwsomeFunctionWithName(){
+		document.getElementById("hiddenText").innerHTML = "See tekst on lahe";
+	}
+	
+	</script>
+	
+	<p id="hiddenText"></p>
+</body>
+</html>
