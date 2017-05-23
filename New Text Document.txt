@@ -1,1 +1,2 @@
 "this is first line in first document" 
+"New line in new document" 
