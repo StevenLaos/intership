@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2 Eri asja ühes</title>
+</head>
+<body>
+<button id = "niceButton">Click it I dare you</button>
+<div onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"style = "background-color:#80ff00;width:140px;height:30px;padding:50px;">Ma usun, et sa ei julge</div>
+<p id="demostration"></p>
+	<script>
+		let shinyButton = document.getElementById("niceButton")
+			shinyButton.addEventListener("click", onClick)
+			shinyButton.addEventListener("click", secondClick)
+		function onClick(){
+			document.getElementById("demostration").innerHTML += "Sa vajutasid seda!<br>"
+		}
+		function secondClick(){
+			document.getElementById("demostration").innerHTML += "Ega üks vajutus naljalt sind rahule ei jäta. <br>"
+		}
+		function mouseOver(obj){
+			obj.innerHTML = "Siiski julgesid"
+		}
+		function mouseOut(obj){
+			obj.innerHTML = "Ma usun, et sa ei julge"
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>EventAndEventListener</title>
+</head>
+<body>
+<button id = "niceButton">Click it I dare you</button>
+<p id="demostration"></p>
+	<script>
+	let shinyButton = document.getElementById("niceButton")
+	shinyButton.addEventListener("click", onClick)
+	shinyButton.addEventListener("click", secondClick)
+	
+	function onClick(){
+		document.getElementById("demostration").innerHTML += "Sa vajutasid seda!<br>"
+	}
+	function secondClick(){
+		document.getElementById("demostration").innerHTML += "Ega üks vajutus naljalt sind rahule ei jäta. <br>"
+	}
+	</script>
+</body>
+</html>

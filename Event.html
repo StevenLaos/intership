@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event</title>
+</head>
+<body>
+<div onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"style = "background-color:#80ff00;width:140px;height:30px;padding:50px;">Ma usun, et sa ei julge</div>
+<p id="demostration"></p>
+<script>
+function mouseOver(obj){
+	obj.innerHTML = "Siiski julgesid"
+}
+function mouseOut(obj){
+	obj.innerHTML = "Ma usun, et sa ei julge"
+}
+</script>
+</body>
+</html>

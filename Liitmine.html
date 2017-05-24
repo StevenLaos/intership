@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Liitmine</title>
+</head>
+<body>
+	Sisesta arvud <input id = "firstNumber"/> + <input id = "secondNumber"/> = <button id = "sumUp">Liida arvud</button>
+	<p id="hiddenSumText"></p>
+	<script>
+	const shinyButton = document.getElementById("sumUp")
+		shinyButton.addEventListener("click", formingSentence)
+	function formingSentence(){
+		const fNumber = document.getElementById("firstNumber").value
+		const sNumber = document.getElementById("secondNumber").value
+		const sum = parseInt(fNumber) + parseInt(sNumber)	
+		document.getElementById("hiddenSumText").innerHTML = "Vastus sellele tehtele on: " + sum
+	}
+	</script>
+</body>
+</html>
