@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-Selle HTML dokumendiga kasutasin enamust mida ma enne olin õppinud eelnevatel nädalatel. <br>
-Selleks oli vaja juurde ka otsida HTML tabeli loomise kohta. <br>
-	<title>IdNameCountryArrayEventListener</title>
-</head>
-<body>
-	<table> 
-		<thead>
-			<tr>
-				<th>ID</th>
-				<th>Name</th>
-				<th>Country</th>
-			</tr>
-		</thead>
-		<tbody id = "myTableBody">
-		</tbody>
-	</table>
-	<script>
-		let holderForStuffArray = [
-			{id: 1, name: "Mari", country: "Finland"},
-			{id: 2, name: "Koit", country: "Norway"},
-			{id: 3, name: "Laine", country: "Latvia"},
-			{id: 4, name: "Sander", country: "Germany"},
-			{id: 5, name: "Aleksander", country: "Russia"}]
-		getInfoFromArray(holderForStuffArray)
-		function getInfoFromArray(forStuffArray){
-			let rowReturnTableString = ""
-			for(let i = 0; i < forStuffArray.length ; i++){
-				rowReturnTableString += `<tr><td>${forStuffArray[i].id}</td>
-								  <td>${forStuffArray[i].name}</td>
-								  <td>${forStuffArray[i].country}</td></tr>`
-				}
-			return document.getElementById("myTableBody").innerHTML = rowReturnTableString
-		}
-	</script>
-</body>
+	<head>
+
+		<title>IdNameCountryArrayEventListener</title>
+	</head>
+	<body>
+		<p>Selle HTML dokumendiga kasutasin enamust mida ma enne olin õppinud eelnevatel nädalatel. <br>
+		Selleks oli vaja juurde ka otsida HTML tabeli loomise kohta. <br></p>
+		<table> 
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Country</th>
+				</tr>
+			</thead>
+			<tbody id = "myTableBody">
+			</tbody>
+		</table>
+		<script>
+			let holderForStuffArray = [
+				{id: 1, name: "Mari", country: "Finland"},
+				{id: 2, name: "Koit", country: "Norway"},
+				{id: 3, name: "Laine", country: "Latvia"},
+				{id: 4, name: "Sander", country: "Germany"},
+				{id: 5, name: "Aleksander", country: "Russia"}
+			]
+			getInfoFromArray(holderForStuffArray)
+			function getInfoFromArray(forStuffArray){
+				let rowReturnTableString = ""
+				for(let i = 0; i < forStuffArray.length ; i++){
+					rowReturnTableString += `<tr><td>${forStuffArray[i].id}</td>
+											     <td>${forStuffArray[i].name}</td>
+											     <td>${forStuffArray[i].country}</td></tr>`
+					}
+				return document.getElementById("myTableBody").innerHTML = rowReturnTableString
+			}
+		</script>
+	</body>
 </html>
