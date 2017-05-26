@@ -1,0 +1,30 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>ArrayTable</title>
+	</head>
+	<body>
+	<p>Array table. all numbers are in 1 row</p>
+	<br><br><br>
+		<table>
+			<thead>
+				<tr>
+					<th>count down for world end when you finish reading it</th>
+				</tr>
+			</thead>
+			<tbody id = "arrayTable">
+			</tbody>
+		</table>
+		<script>
+			let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+			informationFromArrayToTable(numberArray)
+			function informationFromArrayToTable(gettingNumbersInNumberArray){
+				let returnRowNumber = ""
+				for(let i = gettingNumbersInNumberArray.length-1; i >= 0; i--){
+					returnRowNumber += `<tr><th>${numberArray[i]}</th></tr>`
+				}						
+				return document.getElementById("arrayTable").innerHTML = returnRowNumber
+			}
+		</script>
+	</body
+</html>

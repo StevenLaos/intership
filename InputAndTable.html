@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>InputAndTable</title>
+	</head>
+	<body>
+		<p>Sisesta Oma Eesnimi ja perekonna nimi </p><br>
+		<input id = "firstName"><input id = "lastName"><button id = "dataSend">Saada info</button>
+		<br><br><br>
+		<table>
+			<thead>
+				<tr>
+					<th>FirstName</th>
+					<th>LastName</th>
+				</tr>
+			</thead>
+			<tbody id = "nameTable">
+			</tbody>
+		</table>
+		<script>
+			const sentButton = document.getElementById("dataSend")
+				  sentButton.addEventListener("click", sendingInformation)
+			function sendingInformation(){
+				const fName = document.getElementById("firstName").value
+				const lName = document.getElementById("lastName").value
+				let tableDataStringReturn = ""
+					tableDataStringReturn = `<tr><td>${fName}</td>
+												 <td>${lName}</td></tr><br>`
+				return document.getElementById("nameTable").innerHTML = tableDataStringReturn
+			}
+		</script>
+	</body>
+</html>

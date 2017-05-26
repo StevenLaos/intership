@@ -1,0 +1,235 @@
+/*function trip(road, kmNumber){
+		const cityTravel = 8/100
+		const highwayTravel = 4.5/100
+        
+	if((road === 'highway' )){
+	return(`Highway gas spent is ${highwayTravel * kmNumber}l`)
+    }
+  	else if((road === 'city')){
+   	return(`City gas spent is ${cityTravel * kmNumber}l`)
+    }
+  	else{
+    return `You didnt enter cityTravel or highwayTravel to calculate the result`
+    }
+}
+console.log(trip('highway')) */
+
+//funktsioon, mis võtab argumendina aastaaja (string)
+// ja tagastab selle aastaja kuud
+// nt kasutaja sisestab suve ja tagastatakse lause 
+// "Suve kuud on ..."
+/*const fullYear = (season) => { 
+    switch (season.toLowerCase()){
+      	case  'autumn':
+        case  'sügis' :
+  		console.log(`Sügise kuud on september, oktoober ja november`)
+  			break;
+      	case  'summer':
+        case  'suvi'  :
+  		console.log(`Suve kuud on juuni, juuli ja August`)
+  			break;
+      	case 'spring':
+        case 'kevad' :
+  		console.log(`Kevade kuud on mai, aprill ja märts`)
+  			break;
+      	case 'winter':
+        case 'talv'  :
+  		console.log(`Talve kuud on detsember, jaanuar ja veebruar`)
+  			break;
+        default:
+  		console.log(`Kahjuks see sõna ei ole aastaaeg.`)
+	}
+}
+fullYear('autumn') */
+
+/*const nt = 'sõna'
+const newNt = nt.toUpperCase()
+console.log(nt.toUpperCase())
+
+const testWord = 'word'
+testWord.charAt(1)
+console.log(testWord.charAt(0))
+
+const wordTest1= 'rusky'
+const number = 123
+console.log(number)
+
+let testObject= {id: 5, name: 'Kati'}
+console.log(testObject.name)
+
+const friendNoFriend = {id: 1,name: {firstName: 'Steven',lastName: 'Laos' }}
+console.log(friendNoFriend.name.lastName)
+
+const randomArrayForTest = [1, 4, 6]
+console.log(randomArrayForTest[2])
+
+const againNewArray = [[1,4,6],[1,4,6],[1,4,6]]
+console.log(againNewArray[1][2])
+
+const objectTestRun = {array: [1,4,6]}
+console.log(objectTestRun.array[2])
+
+const forTeacher = 'testrun'
+forTeacher.toUpperCase().charAt()
+console.log(forTeacher.toUpperCase().charAt(0))
+
+//Tee funktsioon, mis võtab argumendiks stringi 
+//ja tagastab selle stringi tagurpidi. 
+//Kasutan loop for-i selle ülesande jaoks. 
+//Tagastaks väikeste tähtedega stringi ehk .toLowerCase
+function rewerseWord(word){
+  	let rewersedWord = ' '
+  	word.toLowerCase
+	for(let i=word.length - 1; i >= 0; i--){
+    rewersedWord = rewersedWord + word[i]
+    }
+  	return rewersedWord
+}
+console.log(rewerseWord('sõna'))*/
+
+//funktsioon, mis võtab argumendiks array[], 
+//numbritest ja tagastab uue array[] üle ühe numbritega
+// seda funktsiooni saab luua foriga
+/*function numberArray(allNumberArray){
+    let numbersOverOneArray = []
+    for(let i=0;i < allNumberArray.length;i= i+2){
+	numbersOverOneArray.push(allNumberArray[i])       
+    }
+  	return numbersOverOneArray
+}
+console.log(numberArray([1,2,3,4,5,6,7,8,9]))
+
+const a = 'üks string'
+const arrayNew = []
+const newObject = {}
+const b = 'veel korra'
+const objectNew = {property: [1, 2, 3, 4, 5]}
+console.log(objectNew.property[4]) */
+
+//funktsioon. mis võtab argumendiks suvaline täis arv ja tagastab array, 
+//kus on paaritud arvud 1 kuni arv mille kasutaja sisestas
+
+/* function newArray(number){
+	let overOneNumberArray = [] 
+    for(let i = 1; i <= number; i = i+2){
+    overOneNumberArray.push(i)
+    }
+  	return overOneNumberArray
+}
+console.log(newArray(12)) */
+
+//funktsioon, mis võtab endale argumendiks objecti 
+//omab 4 propertyit {id: , fName: , lName: , favPet: }
+//tagastab info eraldi ridadele
+/*let obj = {id: 1, fName: "Mari", lName: "Mets", favPet: "koer"}
+function testWorkWith(object){
+    for(let prop in object){
+    console.log(`${prop} = ${object[prop]}`)
+    }
+}
+testWorkWith(obj) */
+//sama mis eelmine aga array's
+/*let obj = {id: 1, fName: "Mari", lName: "Mets", favPet: "koer"}
+function testWorkWith(object){
+	let array = []
+  	for(let prop in object){
+    array.push(object[prop])
+    }
+	return array
+}
+console.log(testWorkWith(obj)) */
+
+//Tee funktsioon, mis tagastab array paaris arvud. 
+//Argumendiks saab kasutaja poolt täis arvu
+//LISA : Tee arrow funktsiooniks.
+
+/*function integer(overOneInteger){
+	let allOverOneInteger = []
+    let i = 0
+	while(i < overOneInteger){
+	i = i+2;
+    allOverOneInteger.push(i)
+    }
+  	return allOverOneInteger
+}
+console.log(integer(16)) */
+
+/*let integer = (overOneInteger) =>{
+	let allOverOneInteger = []
+    let i = 0
+	while(i < overOneInteger){
+	i = i+2;
+    allOverOneInteger.push(i)
+    }
+  	return allOverOneInteger
+}
+console.log(integer(20)) */
+
+//array 1-10 ja tagastab tagurpidi 10-1
+//for array.
+
+/*function rNumber(rewNumber){
+  	let rewersedNumber = [] 
+  	for(let i = rewNumber.length-1; i >= 0; i--){
+	rewersedNumber.push(rewNumber[i])
+	}
+	return rewersedNumber
+}
+console.log(rNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])) */
+
+/*function rNumber(rewNumber){
+  	let rewersedNumber = []
+    let i = rewNumber.length-1
+    do{
+    rewersedNumber.push(rewNumber[i])
+    i--
+    }while(i >= 0)
+   return rewersedNumber
+}
+console.log(rNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])) */
+
+//Mõtle välja ülessane kus sa saad seda rakendada.
+//school 7 < age < 18
+
+/* function ageForSchool(age){
+	age < 7 || age > 18 ? (
+    alert `Oled liiga vana`
+  ) : (alert `Oled kooli ealine`)
+
+}
+console.log(ageForSchool(9)) */
+// 1 < 2 ? a = 1 : a = 2
+
+//https://developer.mozilla.org/en-US/docs/Archive/Web/Scope_Cheatsheet
+/*const exObj = {}
+const exArray = [{array: []}, 2]
+console.log(exArray[1])
+const objectFun = {objectInObject:{arrayInObjectInObject: ["victim",]}}
+console.log(objectFun.objectInObject.arrayInObjectInObject[0])*/
+
+// htmliga teen kasti kuhu saab teksti lisada (input)
+// Kui sinna tekst lisada tekib kasti alla kiri,
+//et "sisestasid teksti või midagi muud"
+//notepad ++ ja html-iga
+
+
+//numbers and string array. Teha funktsioon, 
+//mis tagastab stringid ja numbrid eraldi?
+
+
+let mixedArrayWithStringsAndNumbers = [1, "boy", 4, "mate", "girl", 25, "buddy", 2111, 22, "friend"]
+function arrayString(mixedArrayWithStringsAndNumbers){
+  	let i = 0
+    let arrayString = []
+    let arrayNumber = []
+    for(i= 0;i < mixedArrayWithStringsAndNumbers.length; i++){     	
+  	if((typeof mixedArrayWithStringsAndNumbers[i] === 'string')){
+        arrayString.push(mixedArrayWithStringsAndNumbers[i])
+  	}else if((typeof mixedArrayWithStringsAndNumbers[i] === 'number')){
+        arrayNumber.push(mixedArrayWithStringsAndNumbers[i])
+        }
+	}
+  	return `First array is string and its value is: ${arrayString}
+ 			Second array is numbers and its value is: ${arrayNumber}`
+}
+console.log(arrayString(mixedArrayWithStringsAndNumbers))
