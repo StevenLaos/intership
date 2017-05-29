@@ -217,7 +217,7 @@ console.log(objectFun.objectInObject.arrayInObjectInObject[0])*/
 //mis tagastab stringid ja numbrid eraldi?
 
 
-let mixedArrayWithStringsAndNumbers = [1, "boy", 4, "mate", "girl", 25, "buddy", 2111, 22, "friend"]
+/*let mixedArrayWithStringsAndNumbers = [1, "boy", 4, "mate", "girl", 25, "buddy", 2111, 22, "friend"]
 function arrayString(mixedArrayWithStringsAndNumbers){
   	let i = 0
     let arrayString = []
@@ -232,4 +232,17 @@ function arrayString(mixedArrayWithStringsAndNumbers){
   	return `First array is string and its value is: ${arrayString}
  			Second array is numbers and its value is: ${arrayNumber}`
 }
-console.log(arrayString(mixedArrayWithStringsAndNumbers))
+console.log(arrayString(mixedArrayWithStringsAndNumbers)) */
+
+/*const numberControl = (number) => {
+ 	if(typeof number === "number"){
+        if(number % 2 !== 0){
+            return alert `Paaritu number`
+        }
+        else if(number/number === 1 ){
+            return alert `Paaris number`   
+        }
+	}
+    return alert `Astusid ämbri otsa või ajasid midagi sassi` 
+}
+numberControl(-8)*/
