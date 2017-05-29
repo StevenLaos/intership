@@ -30,7 +30,7 @@
 			function getInfoFromArray(forStuffArray){
 				let rowReturnTableString = ""
 				for(let i = 0; i < forStuffArray.length ; i++){
-					rowReturnTableString = `<tr><td>${forStuffArray[i].id}</td>
+					rowReturnTableString += `<tr><td>${forStuffArray[i].id}</td>
 											     <td>${forStuffArray[i].name}</td>
 											     <td>${forStuffArray[i].country}</td></tr>`
 					}

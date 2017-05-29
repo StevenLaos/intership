@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTMLWith2Input</title>
+	</head>
+	<body>
+			yeah something: <br>
+			<input type = "text" id = "yeahSomething"/> <br><br>
+			yeah something else: <br>
+			<input type = "text" id = "yeahSomethingElse"/> <br><br>
+			<button type = "submit" value = "submit" id = "submit">If you are Done CLICK it</button>
+		<p id="demo"></p>
+		<script>
+			const clickedButton = document.getElementById("submit")
+				  clickedButton.addEventListener("click", showingInputValue)
+		function showingInputValue(){
+			const something = document.getElementById("yeahSomething").value
+			const somethingElse = document.getElementById("yeahSomethingElse").value
+			let someInfoFromFiles = `${something} ${somethingElse}`
+			document.getElementById("demo").innerHTML = someInfoFromFiles
+		}
+		
+		</script>
+	</body>
+</html>

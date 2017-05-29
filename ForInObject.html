@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ForInObject</title>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>ÄraEnamKõhkle</th>
+					<th>Väärtused</th>
+				</tr>
+			</thead>
+			<tbody id = "objectTable">
+			</tbody>
+		</table>
+		<script>
+		let person = {
+			firstName: "Pille",
+			lastName: "Paul",
+			age: 17,
+			work: "doctor",
+			eyeColor: "brown"
+			}
+		sendInfoFromObject(person)
+		function sendInfoFromObject(){
+			let personList = ""
+			for(prop in person){
+			personList += `<tr><td>${prop}</td><td>${person[prop]}</td></tr>`
+			}
+			return document.getElementById("objectTable").innerHTML = personList
+		}
+		</script>
+	</body>
+</html>
