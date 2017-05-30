@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ArrayTabaleVol2</title>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>firstName</th>
+					<th>lastName</th>
+				</tr>
+			</thead>
+			<tbody id = "myNiceNewTable">
+			</tbody>
+		</table>
+		<script>
+			const nameArray = [
+				{ id: 1,
+				  firstName: 'Mauno',
+				  lastName: 'Kivi'},
+				{ id: 2,
+				  firstName: 'Sirli',
+				  lastName: 'Ahven'},
+				{ id: 3,
+				  firstName: 'Mari',
+				  lastName: 'Mets'},
+				{ id: 4,
+				  firstName: 'Helen',
+				  lastName: 'Oks'},
+				{ id: 5,
+				  firstName: 'Pirgit',
+				  lastName: 'Vali'}]
+			sendInfoToTable(nameArray)
+			function sendInfoToTable(fullNameArray){
+				let fullyDoneTable = ""
+				for(let i = 0; i < fullNameArray.length ; i++){
+					fullyDoneTable += `<tr><td>${fullNameArray[i].id}</td>
+										   <td>${fullNameArray[i].firstName}</td>
+										   <td>${fullNameArray[i].lastName}</td></tr>`
+					}
+				document.getElementById("myNiceNewTable").innerHTML = fullyDoneTable
+			}  
+			
+		</script>
+	</body>
+</html>
