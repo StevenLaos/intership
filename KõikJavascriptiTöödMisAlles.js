@@ -246,3 +246,85 @@ console.log(arrayString(mixedArrayWithStringsAndNumbers)) */
     return alert `Astusid ämbri otsa või ajasid midagi sassi` 
 }
 numberControl(-8)*/
+
+
+//Implementeerida queue ja stack. Mõlemale 3 funktsiooni.
+// queuele - dequeue; enqueue ; peek
+// stackile - push; peek; pop
+
+// stack
+function Stack(){
+ 	this.stack = new Array()
+ 	this.pop = function(){
+  		return this.stack.pop()
+ 	}
+ 	this.push = function(item){
+  		this.stack.push(item)
+ 	}
+}
+let stack = new Stack()
+stack.push("2")
+stack.push("4")
+stack.push("6")
+alert(stack.pop())
+alert(stack.pop())
+alert(stack.pop())
+
+//queue 
+function Queue(){ 
+ 	this.queue = new Array()
+ 	this.dequeue = function(){
+  		return this.queue.pop() 
+ 	} 
+ 	this.enqueue = function(item){
+  		this.queue.unshift(item)
+ 	}
+}
+let Q = new Queue()
+Q.enqueue("1")
+Q.enqueue("2")
+Q.enqueue("3")
+alert(Q.dequeue())
+alert(Q.dequeue())
+alert(Q.dequeue()) 
+
+// dequeue 
+function Dequeue(){
+	this.queue = new Array()
+   	this.popback = function(){
+    	return this.queue.pop()
+   	}
+   	this.pushback = function(item){
+    	this.queue.push(item)
+   	}
+   	this.popfront = function(){
+    	return this.queue.shift()
+   	}
+   	this.pushfront = function(item){
+    	this.queue.unshift(item)
+   	}
+}
+let dequeue = new Dequeue()
+dequeue.pushfront("6")
+dequeue.pushfront("9")
+dequeue.pushback("12")
+alert(dequeue.popfront())
+alert(dequeue.popback()) 
+
+//stack peek
+function Stack() {
+	this.stack = new Array()
+	this.size 
+}
+Stack.peek = function() {
+  	return this.size > 0 ? this.stack[this.size-1] : undefined; }
+
+
+//queue peek
+function Queue() {
+	this.queue = new Array()
+	this.first
+	this.size
+}
+Queue.peek = function() { 
+	return this.size > 0 ? this.queue[this.first] : undefined; }
