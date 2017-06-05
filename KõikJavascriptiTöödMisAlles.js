@@ -14,6 +14,8 @@
 }
 console.log(trip('highway')) */
 
+
+
 //funktsioon, mis võtab argumendina aastaaja (string)
 // ja tagastab selle aastaja kuud
 // nt kasutaja sisestab suve ja tagastatakse lause 
@@ -41,6 +43,8 @@ console.log(trip('highway')) */
 	}
 }
 fullYear('autumn') */
+
+
 
 /*const nt = 'sõna'
 const newNt = nt.toUpperCase()
@@ -73,6 +77,8 @@ const forTeacher = 'testrun'
 forTeacher.toUpperCase().charAt()
 console.log(forTeacher.toUpperCase().charAt(0))
 
+
+
 //Tee funktsioon, mis võtab argumendiks stringi 
 //ja tagastab selle stringi tagurpidi. 
 //Kasutan loop for-i selle ülesande jaoks. 
@@ -87,6 +93,8 @@ function rewerseWord(word){
 }
 console.log(rewerseWord('sõna'))*/
 
+
+
 //funktsioon, mis võtab argumendiks array[], 
 //numbritest ja tagastab uue array[] üle ühe numbritega
 // seda funktsiooni saab luua foriga
@@ -98,7 +106,6 @@ console.log(rewerseWord('sõna'))*/
   	return numbersOverOneArray
 }
 console.log(numberArray([1,2,3,4,5,6,7,8,9]))
-
 const a = 'üks string'
 const arrayNew = []
 const newObject = {}
@@ -106,9 +113,10 @@ const b = 'veel korra'
 const objectNew = {property: [1, 2, 3, 4, 5]}
 console.log(objectNew.property[4]) */
 
+
+
 //funktsioon. mis võtab argumendiks suvaline täis arv ja tagastab array, 
 //kus on paaritud arvud 1 kuni arv mille kasutaja sisestas
-
 /* function newArray(number){
 	let overOneNumberArray = [] 
     for(let i = 1; i <= number; i = i+2){
@@ -117,6 +125,8 @@ console.log(objectNew.property[4]) */
   	return overOneNumberArray
 }
 console.log(newArray(12)) */
+
+
 
 //funktsioon, mis võtab endale argumendiks objecti 
 //omab 4 propertyit {id: , fName: , lName: , favPet: }
@@ -128,6 +138,9 @@ function testWorkWith(object){
     }
 }
 testWorkWith(obj) */
+
+
+
 //sama mis eelmine aga array's
 /*let obj = {id: 1, fName: "Mari", lName: "Mets", favPet: "koer"}
 function testWorkWith(object){
@@ -139,10 +152,11 @@ function testWorkWith(object){
 }
 console.log(testWorkWith(obj)) */
 
+
+
 //Tee funktsioon, mis tagastab array paaris arvud. 
 //Argumendiks saab kasutaja poolt täis arvu
 //LISA : Tee arrow funktsiooniks.
-
 /*function integer(overOneInteger){
 	let allOverOneInteger = []
     let i = 0
@@ -153,6 +167,8 @@ console.log(testWorkWith(obj)) */
   	return allOverOneInteger
 }
 console.log(integer(16)) */
+
+
 
 /*let integer = (overOneInteger) =>{
 	let allOverOneInteger = []
@@ -165,9 +181,10 @@ console.log(integer(16)) */
 }
 console.log(integer(20)) */
 
+
+
 //array 1-10 ja tagastab tagurpidi 10-1
 //for array.
-
 /*function rNumber(rewNumber){
   	let rewersedNumber = [] 
   	for(let i = rewNumber.length-1; i >= 0; i--){
@@ -176,6 +193,8 @@ console.log(integer(20)) */
 	return rewersedNumber
 }
 console.log(rNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])) */
+
+
 
 /*function rNumber(rewNumber){
   	let rewersedNumber = []
@@ -188,9 +207,10 @@ console.log(rNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])) */
 }
 console.log(rNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])) */
 
+
+
 //Mõtle välja ülessane kus sa saad seda rakendada.
 //school 7 < age < 18
-
 /* function ageForSchool(age){
 	age < 7 || age > 18 ? (
     alert `Oled liiga vana`
@@ -200,6 +220,8 @@ console.log(rNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])) */
 console.log(ageForSchool(9)) */
 // 1 < 2 ? a = 1 : a = 2
 
+
+
 //https://developer.mozilla.org/en-US/docs/Archive/Web/Scope_Cheatsheet
 /*const exObj = {}
 const exArray = [{array: []}, 2]
@@ -207,16 +229,14 @@ console.log(exArray[1])
 const objectFun = {objectInObject:{arrayInObjectInObject: ["victim",]}}
 console.log(objectFun.objectInObject.arrayInObjectInObject[0])*/
 
+
+
 // htmliga teen kasti kuhu saab teksti lisada (input)
 // Kui sinna tekst lisada tekib kasti alla kiri,
 //et "sisestasid teksti või midagi muud"
 //notepad ++ ja html-iga
-
-
 //numbers and string array. Teha funktsioon, 
 //mis tagastab stringid ja numbrid eraldi?
-
-
 /*let mixedArrayWithStringsAndNumbers = [1, "boy", 4, "mate", "girl", 25, "buddy", 2111, 22, "friend"]
 function arrayString(mixedArrayWithStringsAndNumbers){
   	let i = 0
@@ -234,6 +254,8 @@ function arrayString(mixedArrayWithStringsAndNumbers){
 }
 console.log(arrayString(mixedArrayWithStringsAndNumbers)) */
 
+
+
 /*const numberControl = (number) => {
  	if(typeof number === "number"){
         if(number % 2 !== 0){
@@ -248,12 +270,12 @@ console.log(arrayString(mixedArrayWithStringsAndNumbers)) */
 numberControl(-8)*/
 
 
+
 //Implementeerida queue ja stack. Mõlemale 3 funktsiooni.
 // queuele - dequeue; enqueue ; peek
 // stackile - push; peek; pop
-
 // stack
-function Stack(){
+/*function Stack(){
  	this.stack = new Array()
  	this.pop = function(){
   		return this.stack.pop()
@@ -269,6 +291,8 @@ stack.push("6")
 alert(stack.pop())
 alert(stack.pop())
 alert(stack.pop())
+
+
 
 //queue 
 function Queue(){ 
@@ -286,10 +310,12 @@ Q.enqueue("2")
 Q.enqueue("3")
 alert(Q.dequeue())
 alert(Q.dequeue())
-alert(Q.dequeue()) 
+alert(Q.dequeue()) */
+
+
 
 // dequeue 
-function Dequeue(){
+/*function Dequeue(){
 	this.queue = new Array()
    	this.popback = function(){
     	return this.queue.pop()
@@ -309,22 +335,146 @@ dequeue.pushfront("6")
 dequeue.pushfront("9")
 dequeue.pushback("12")
 alert(dequeue.popfront())
-alert(dequeue.popback()) 
+alert(dequeue.popback()) */
 
-//stack peek
-function Stack() {
+
+
+//stack peek vol 1 ja fail 
+/*function Stack() {
 	this.stack = new Array()
 	this.size 
 }
 Stack.peek = function() {
-  	return this.size > 0 ? this.stack[this.size-1] : undefined; }
+  	return this.size > 0 ? this.stack[this.size-1] : undefined; } */
 
 
-//queue peek
-function Queue() {
+
+//queue peek vol 1 ja fail
+/*function Queue() {
 	this.queue = new Array()
 	this.first
 	this.size
 }
 Queue.peek = function() { 
-	return this.size > 0 ? this.queue[this.first] : undefined; }
+	return this.size > 0 ? this.queue[this.first] : undefined; } */
+
+
+
+//stack peek vol2
+/*function stack(newString) {                  
+    this.stackPeek = function stack(newString) {
+    newString[newString.length - 1]
+    }
+    return newString
+} */
+
+
+
+//Queue peek vol 2
+/*function queue(number) {
+    this.peek = function queue(){
+    	number[0]                 
+    }
+    return number
+} */
+
+
+
+//stack kõik koos prototypega
+/*function Stack() {
+	this.stack = []
+}
+	Stack.prototype.push = function(value) {
+  		this.stack.push(value)
+}
+	Stack.prototype.pop = function() {
+  		return this.stack.pop()
+}
+	Stack.prototype.peek = function() {
+  		return this.stack[this.stack.length - 1]
+}
+	Stack.prototype.print = function() {
+  		console.log(this.stack.join(" "))
+}
+let stack = new Stack()
+stack.push(1)
+stack.push(2)
+stack.push(3)
+stack.print()
+//nt console.log
+console.log(stack.peek()) */
+
+
+
+//Queue kõik koos prototypega
+/*function Queue() {
+	this.queue = []
+}
+	Queue.prototype.enqueue = function(value) {
+  		this.queue.push(value)
+}
+	Queue.prototype.dequeue = function() {
+  		return this.queue.shift()
+}
+	Queue.prototype.peek = function() {
+  		return this.queue[0]
+}
+	Queue.prototype.print = function() {
+  		console.log(this.queue.join(" "))
+}
+let queue = new Queue()
+
+queue.enqueue(1)
+queue.enqueue(2)
+queue.enqueue(3)
+queue.print()
+//nt console.log
+console.log(queue.dequeue()) */
+
+
+
+//Stack kõik koos classiga
+/*class Stack{
+	constructor(stack){
+    	this.stack = []
+    }
+  	stackPush(value){
+    	return this.stack.push(value)
+    }
+    stackPop(){
+    	return this.stack.pop()
+    }
+    stackPeek(){
+     	return this.stack[this.stack.length - 1]
+    }
+    stackPrint(){
+    	console.log(this.stack.join(" "))
+    }
+}
+let stack = new Stack() */
+
+
+
+//Queue kõik koos classiga
+/*class Queue{
+	constructor(queue){
+    	this.queue = []
+    }
+	enQueue(value){
+    	return this.queue.push(value)	
+    }
+  	deQueue(){
+    	return this.queue.shift()
+    }
+  	queuePeek(){
+    	return this.queue[0]
+    }
+  	queuePrint(){
+    	console.log(this.queue.join(" "))	
+    }
+}
+let queue = new Queue() */
+
+
+
+//
