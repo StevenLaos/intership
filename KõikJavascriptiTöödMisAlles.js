@@ -239,10 +239,9 @@ console.log(objectFun.objectInObject.arrayInObjectInObject[0])*/
 //mis tagastab stringid ja numbrid eraldi?
 /*let mixedArrayWithStringsAndNumbers = [1, "boy", 4, "mate", "girl", 25, "buddy", 2111, 22, "friend"]
 function arrayString(mixedArrayWithStringsAndNumbers){
-  	let i = 0
     let arrayString = []
     let arrayNumber = []
-    for(i= 0;i < mixedArrayWithStringsAndNumbers.length; i++){     	
+    for(let i= 0;i < mixedArrayWithStringsAndNumbers.length; i++){     	
   	if((typeof mixedArrayWithStringsAndNumbers[i] === 'string')){
         arrayString.push(mixedArrayWithStringsAndNumbers[i])
   	}else if((typeof mixedArrayWithStringsAndNumbers[i] === 'number')){
@@ -385,7 +384,7 @@ Queue.peek = function() {
 	this.stack = []
 }
 	Stack.prototype.push = function(value) {
-  		this.stack.push(value)
+  		return this.stack.push(value)
 }
 	Stack.prototype.pop = function() {
   		return this.stack.pop()
@@ -394,7 +393,7 @@ Queue.peek = function() {
   		return this.stack[this.stack.length - 1]
 }
 	Stack.prototype.print = function() {
-  		console.log(this.stack.join(" "))
+  		return this.stack.join(" ")
 }
 let stack = new Stack()
 stack.push(1)
@@ -411,7 +410,7 @@ console.log(stack.peek()) */
 	this.queue = []
 }
 	Queue.prototype.enqueue = function(value) {
-  		this.queue.push(value)
+  		return this.queue.push(value)
 }
 	Queue.prototype.dequeue = function() {
   		return this.queue.shift()
@@ -420,7 +419,7 @@ console.log(stack.peek()) */
   		return this.queue[0]
 }
 	Queue.prototype.print = function() {
-  		console.log(this.queue.join(" "))
+  		return this.queue.join(" ")
 }
 let queue = new Queue()
 
@@ -435,20 +434,20 @@ console.log(queue.dequeue()) */
 
 //Stack kõik koos classiga
 /*class Stack{
-	constructor(stack){
-    	this.stack = []
+	constructor(){
+    	return this.stack = []
     }
-  	stackPush(value){
+  	push(value){
     	return this.stack.push(value)
     }
-    stackPop(){
+    pop(){
     	return this.stack.pop()
     }
-    stackPeek(){
+    peek(){
      	return this.stack[this.stack.length - 1]
     }
-    stackPrint(){
-    	console.log(this.stack.join(" "))
+    print(){
+    	return this.stack.join(" ")
     }
 }
 let stack = new Stack() */
@@ -457,7 +456,7 @@ let stack = new Stack() */
 
 //Queue kõik koos classiga
 /*class Queue{
-	constructor(queue){
+	constructor(){
     	this.queue = []
     }
 	enQueue(value){
@@ -466,15 +465,142 @@ let stack = new Stack() */
   	deQueue(){
     	return this.queue.shift()
     }
-  	queuePeek(){
+  	peek(){
     	return this.queue[0]
     }
-  	queuePrint(){
-    	console.log(this.queue.join(" "))	
+  	print(){
+    	return this.queue.join(" ")	
     }
 }
 let queue = new Queue() */
 
 
 
-//
+//Stack class funktsioon, mis kontrollib, et array pole tühi
+/*class Stack{
+	constructor(){
+    	this.stack = []
+    }
+    push(value){
+    	return this.stack.push(value)
+    }
+    pop(){
+    	return this.stack.pop()
+    }
+    peek(){
+     	return this.stack[this.stack.length - 1]
+    }
+    print(){
+    	if(stack.length > 0 && stack != 'undefined'){
+        	 return this.stack.join(" ")
+        }
+    return `Stack is EMPTY.`
+    }
+  	isEmpty(){
+   		return this.stack == 0 
+    }
+}
+let stack = new Stack() */
+
+
+
+//Queue class funktsioon ei ole tühi
+/*class Queue{
+	constructor(){
+    	this.queue = []
+    }
+	enQueue(value){
+    	return this.queue.push(value)	
+    }
+  	deQueue(){
+    	return this.queue.shift()
+    }
+  	peek(){
+    	return this.queue[0]
+    }
+  	print(){
+    	if(queue.length > 0 && queue != 'undefined'){
+        	 return this.queue.join(" ")
+        }
+    return `Queue is EMPTY.`	
+    }
+    isEmpty(){
+   		return this.queue == 0 
+    }
+}
+let queue = new Queue() */
+
+
+
+//Stack funktsioon classis tekitada olukord, 
+//kus kasutaja ei saa sisestada tühjust
+/*class Stack{
+	constructor(){
+    	this.stack = []
+    }
+    push(value){
+    	if(value !== 'undefined'){
+    		return this.stack.push(value)
+    	}
+    return `Sa pole Arrayle midagi lisanud.`
+    }
+    pop(){
+    	return this.stack.pop()
+    }
+    peek(){
+     	return this.stack[this.stack.length - 1]
+    }
+    print(){
+    	if(stack.length > 0 && stack != 'undefined'){
+        	 return this.stack.join(" ")
+        }
+    return `Stack is EMPTY.`
+    }
+  	isEmpty(){
+   		return this.stack == 0 
+    }
+}
+let stack = new Stack() */
+
+
+
+//Queue funktsioon classis tekitada olukord, 
+//kus kasutaja ei saa sisestada tühjust
+/*class Queue{
+	constructor(){
+    	this.queue = []
+    }
+	enQueue(value){
+      	if(value !== 'undefined'){
+    		return this.queue.push(value)
+        }
+    return `Sa pole Arrayle midagi lisanud`
+    }
+  	deQueue(){
+    	return this.queue.shift()
+    }
+  	peek(){
+    	return this.queue[0]
+    }
+  	print(){
+    	if(queue.length > 0 && queue != 'undefined'){
+        	 return this.queue.join(" ")
+        }
+    return `Queue is EMPTY.`	
+    }
+    isEmpty(){
+   		return this.queue == 0 
+    }
+}
+let queue = new Queue() */
+
+
+//function sisendiks arrayNumbritega ja 
+// jagub kolmega - prindib Fizz
+// jagub viiega - prindib Buzz
+// jagub kolme ja viiega - prindib FizzBuzz
+// muul juhul prindib numbri ise
+
+// array loomine - funktsioon - elementide arv sisendiks
+// for
+// while
