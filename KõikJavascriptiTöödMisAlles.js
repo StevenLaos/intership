@@ -212,9 +212,9 @@ console.log(rNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])) */
 //Mõtle välja ülessane kus sa saad seda rakendada.
 //school 7 < age < 18
 /* function ageForSchool(age){
-	age < 7 || age > 18 ? (
-    alert `Oled liiga vana`
-  ) : (alert `Oled kooli ealine`)
+	age < 7 || age > 18 ? 
+	( alert `Oled liiga vana`) : 
+	( alert `Oled kooli ealine`)
 
 }
 console.log(ageForSchool(9)) */
